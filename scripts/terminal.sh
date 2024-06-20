@@ -19,5 +19,5 @@ dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6
 dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/use-theme-colors false
 
 echo 'Copy zsh config'
-sudo cp -r $install_path/files/zsh/.p10k.zsh ~/.p10k.zsh
-sudo cp -r $install_path/files/zsh/.zshrc ~/.zshrc
+sudo cp -r $install_path/files/zsh/.p10k.zsh $HOME/.p10k.zsh
+sudo cp -r $install_path/files/zsh/.zshrc $HOME/.zshrc

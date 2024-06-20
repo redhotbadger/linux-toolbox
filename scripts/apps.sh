@@ -10,8 +10,8 @@ yay -S vscodium-bin --noconfirm --needed
 vscodium
 sleep 5
 
-mkdir -p ~/.config/VSCodium/User
-cp -r -f $install_path/files/vscodium/* ~/.config/VSCodium/User
+mkdir -p $HOME/.config/VSCodium/User
+cp -r -f $install_path/files/vscodium/* $HOME/.config/VSCodium/User
 
 echo 'Installing Github Desktop'
 yay -S github-desktop-bin --noconfirm --needed

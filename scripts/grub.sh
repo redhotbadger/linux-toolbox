@@ -5,8 +5,8 @@ echo 'Configuring Grub'
 echo '============================================================================'
 
 # Create theme directory
-mkdir ~/.grub-theme/
-cd ~/.grub-theme/
+mkdir $HOME/.grub-theme/
+cd $HOME/.grub-theme/
 
 # Download theme
 git clone https://github.com/vinceliuice/grub2-themes.git

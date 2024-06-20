@@ -78,10 +78,10 @@ flatpak override --env=GTK_THEME=adw-gtk3 --user
 sudo flatpak override --filesystem=$HOME/.themes
 
 #Copy files for wallpapers
-cp -r $install_path/files/wallpapers* ~/Pictures/Wallpapers
-cp -r $install_path/files/wallpapers* ~/.local/share/backgrounds
+cp -r $install_path/files/wallpapers* $HOME/Pictures/Wallpapers
+cp -r $install_path/files/wallpapers* $HOME/.local/share/backgrounds
 
-dconf write /org/gnome/desktop/background/picture-uri "'file://~/.local/share/backgrounds/Nature%20sky%20sunset%20illustration.png'"
+dconf write /org/gnome/desktop/background/picture-uri "'file://$HOME/.local/share/backgrounds/Nature%20sky%20sunset%20illustration.png'"
 dconf write /org/gnome/desktop/screensaver/primary-color "'#000000000000'"
 dconf write /org/gnome/desktop/screensaver/secondary-color "'#000000000000'"
 
