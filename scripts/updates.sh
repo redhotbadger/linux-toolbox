@@ -8,19 +8,20 @@ echo '==========================================================================
 
 if [ "$select_os" = "manjaro" ]; then
     ColorBlue 'Updating Manjaro\n'
-    sudo pacman -Syyu
+    yay -Syyu
     ColorGreen 'Manjaro Updates Completed\n'
 fi
 
 if [ "$select_os" = "endevouros" ]; then
     ColorBlue 'Updating EndevourOS\n'
     eos-update --aur --noconfirm --needed
+    yay -Syyu
     ColorGreen 'EndevourOS Updates Completed\n'
 fi
 
 if [ "$select_os" = "cachyos" ]; then
     ColorBlue 'Updating CachyOS\n'
-    sudo pacman -Syyu
+    yay -Syyu
     ColorGreen 'CachyOS Updates Completed\n'
 fi
 

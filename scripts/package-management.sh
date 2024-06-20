@@ -11,8 +11,8 @@ install_yay() {
 	sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm --needed 
 
 	yay -Y --gendb
-	yay -Syu --devel
-	yay -Y --devel --save
+	yay -Syu --devel --noconfirm
+	yay -Y --devel --save --noconfirm
 } 
 
 install_pamac() {
