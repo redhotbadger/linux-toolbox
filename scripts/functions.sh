@@ -74,10 +74,13 @@ select_os() {
     if [ $distro = "EndevourOS" ]; then
         endevouros
         
-    elif [ $distro = "CachyOS" ]; then
+    elif [ $distro = "cachyos" ]; then
         cachyos
 
     elif [ $distro = "ManjaroLinux" ]; then
         manjaro
+    else
+        printf "Error: Unsupported Distro $distro"
+        exit 1
     fi
 }
