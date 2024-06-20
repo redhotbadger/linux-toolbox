@@ -26,7 +26,7 @@ mkdir ~/repos && cd ~/repos && git clone https://github.com/redhotbadger/linux-t
 ### Run Tool Box
 
 ```
-cd ~/repos/linux-toolbox/tools.sh
+cd ~/repos/linux-toolbox && ./tools.sh
 ```
 
 ## Acknowledgments
