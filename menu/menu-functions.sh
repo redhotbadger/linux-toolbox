@@ -105,8 +105,11 @@ function all() {
 }
 
 function list_updates() {
+    local confirm=${1:-true}
     (checkupdates && yay -Qua)
     reset_session
+
+    check_confirm $confirm
     return 1
 }
 

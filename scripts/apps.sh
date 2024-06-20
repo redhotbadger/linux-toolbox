@@ -16,6 +16,9 @@ cp -r -f $install_path/files/vscodium/* $HOME/.config/VSCodium/User
 echo 'Installing Github Desktop'
 yay -S github-desktop-bin --noconfirm --needed
 
+echo 'Installing GitKraken'
+yay -S gitkraken --noconfirm --needed
+
 echo 'Installing gitg'
 sudo pacman -S gitg --noconfirm --needed
 
