@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
 app_name="RedHotBadgers Linux Toolbox"
-install_path='~/repos/linux-toolbox'
+install_path=$HOME/repos/linux-toolbox
 
 # Ensure we are running under bash
 if [ "$BASH_SOURCE" = "" ]; then
